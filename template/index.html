@@ -14,25 +14,28 @@
 		<header class='Header'>
 			<nav class='Header-menu'>
 				<ul  class='Header-menuList'>
-					<li class='Header-menuItem'><a href='#Home' title='Home' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Home</span><span class='Header-menuIcon icon-inicio'></span></a></li>					
-					<li class='Header-menuItem'><a href='#' title='Works' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Works</span><span class='Header-menuIcon icon-trabajo'></span></a></li>
-					<li class='Header-menuItem'><a href='#' title='Contact' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Contact</span><span class='Header-menuIcon icon-contacto'></span></a></li>
+					<li class='Header-menuItem'><a href='#Perfil' title='Perfil' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Perfil</span><span class='Header-menuIcon icon-perfil'></span></a></li>					
+					<li class='Header-menuItem'><a href='#Trabajos' title='Trabajos' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Trabajos</span><span class='Header-menuIcon icon-trabajo'></span></a></li>
+					<li class='Header-menuItem'><a href='#Contacto' title='Contacto' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Contacto</span><span class='Header-menuIcon icon-contacto'></span></a></li>
 				</ul>
 			</nav>			
 		</header>
 
-		<section class='Home'>
-			<h1 class='Home-header'>
-				<div class='Home-headerIcon icon-perfil ui-shadowText'></div>
-				<div class='Home-headerTitle ui-shadowText'>Julian M Parra</div>
-			</h1>
-			<div class='Home-body'>
-				<figure class='Home-img'>
+		<section class='Perfil' id='Perfil'>
+			<div class='Perfil-header'>
+
+				<div class='Perfil-headerTitle ui-shadowText'>Perfil</div>
+				<div class='Perfil-headerIcon icon-perfil ui-shadowText'></div>
+				
+				
+			</div>
+			<div class='Perfil-body ui-shadowBox'>
+				<figure class='Perfil-img'>
 					<img src='../static/img/avatar.jpg' alt='Julian M Parra'/>
 				</figure>
-				<article class='Home-article'>				
-					<h2 class='Home-articleTitle'>Profile</h2>
-					<p class='Home-articleText'>
+				<article class='Perfil-article'>				
+					<h2 class='Perfil-articleTitle'>Julian M Parra</h2>
+					<p class='Perfil-articleText'>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -44,10 +47,79 @@
 			</div>
 		</section>
 
+		<section class='Trabajos' id='Trabajos' >
+			<div class='Trabajos-header'>
+
+				<div class='Trabajos-headerTitle ui-shadowText'>Trabajos</div>
+				<div class='Trabajos-headerIcon icon-trabajo ui-shadowText'></div>
+				
+			</div>
+			<div class='Trabajos-body ui-shadowBox'>
+
+				<article class='Trabajos-article ui-shadowBox'>
+					<div class='Trabajos-articleTitle'>GEOCIM</div>
+					<figure class='Trabajos-articleImg'><img src='../static/img/gyc.png'</figure>	
+					<div class='Trabajos-articleDescription'>Sistema de Gestión de Proyectos en GYC</div>				
+				</article>
+
+				<article class='Trabajos-article ui-shadowBox'>
+					<div class='Trabajos-articleTitle'>NICOMAR</div>
+					<figure class='Trabajos-articleImg'><img src='../static/img/nicomar.png'</figure>	
+					<div class='Trabajos-articleDescription'>CSM para la página comercial de nicomar</div>				
+				</article>
+
+				<article class='Trabajos-article ui-shadowBox'>
+					<div class='Trabajos-articleTitle'>COLCABLE</div>
+					<figure class='Trabajos-articleImg'><img src='../static/img/colcable.png'</figure>	
+					<div class='Trabajos-articleDescription'>Sistema de administración facturable de Colcable</div>				
+				</article>
+
+				<article class='Trabajos-article ui-shadowBox'>
+					<div class='Trabajos-articleTitle'>MIASPROSA</div>
+					<figure class='Trabajos-articleImg'><img src='../static/img/miasprosa.png'</figure>	
+					<div class='Trabajos-articleDescription'>Sistema movil de geolocalización para solicitud de transporte</div>				
+				</article>
+
+				<article class='Trabajos-article ui-shadowBox'>
+					<div class='Trabajos-articleTitle'>IDRD</div>
+					<figure class='Trabajos-articleImg'><img src='../static/img/idrd.png'</figure>	
+					<div class='Trabajos-articleDescription'>Sistema de recoleccion y analisis de resultados deportivos del IDRD</div>				
+				</article>
+
+
+			</div>
+		</section>
+
+		<section class='Contacto' id='Contacto'>
+			<div class='Contacto-header'>
+
+				<div class='Contacto-headerTitle ui-shadowText'>Contacto</div>
+				<div class='Contacto-headerIcon icon-contacto ui-shadowText'></div>
+				
+			</div>
+			<div class='Contacto-body ui-shadowBox'>		
+						
+				<div class='Contacto-form'>					
+					<form>
+						<label class='Contacto-label'>Nombre</label>
+						<input type='text' name='nombre' class='Contacto-input ui-shadowBox' placeHolder='Nombre' />
+						<label class='Contacto-label'>Correo</label>
+						<input type='text' name='correo' class='Contacto-input ui-shadowBox' placeHolder='Correo' />			
+						<label class='Contacto-label '>Asunto</label>
+						<textarea rows='3' name='asunto' type='text' class='Contacto-textarea ui-shadowBox' placeHolder='Asunto'></textarea>
+					</form>			
+					<button type='button' class='Contacto-boton'>Enviar</button>
+				</div>				
+				
+			</div>
+		</section>
+
+
 		<footer class='Footer'>
-			<a class='Footer-link ui-shadowText icon-twitter' href='#'></a>
-			<a class='Footer-link ui-shadowText icon-github' href='#'></a>
-			<a class='Footer-link ui-shadowText icon-linkedin' href='#'></a>
+			<a class='Footer-link ui-shadowText icon-twitter' href='https://twitter.com/maurorebound' target='_blank'></a>
+			<a class='Footer-link ui-shadowText icon-github' href='https://github.com/rebound56'  target='_blank'></a>
+			<a class='Footer-link ui-shadowText icon-linkedin' href='#'  target='_blank'></a>
+			<a class='Footer-link ui-shadowText icon-facebook' href='https://facebook.com/maurorebound'  target='_blank'></a>			
 			<div class='Footer-description'>
 				Powered By Julian M Parra &copy; 2014
 			</div>			
