@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang='es'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1' />
+		<title>Julian M Parra</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href='static/css/normalize.css'/>
+		<link rel='stylesheet' type='text/css' href='static/css/custom.css'/>
+		
+	</head>
+	<body>
+		<section class='Cargando'>
+			<div class='Cargando-content'>
+				<img src='static/img/loading.gif' />
+			</div>
+		</section>
+		<header class='Header'>
+			<nav class='Header-menu'>
+				<ul  class='Header-menuList'>
+					<li class='Header-menuItem'><a href='#Perfil' title='Perfil' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Perfil</span><span class='Header-menuIcon icon-perfil'></span></a></li>					
+					<li class='Header-menuItem'><a href='#Trabajos' title='Trabajos' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Participación en</span><span class='Header-menuIcon icon-trabajo'></span></a></li>
+					<li class='Header-menuItem'><a href='#Contacto' title='Contacto' class='Header-menuLink ui-shadowText'><span class='Header-menuText'>Contacto</span><span class='Header-menuIcon icon-contacto'></span></a></li>
+				</ul>
+			</nav>			
+		</header>
+		<section class='Contenido'>
+			<section class='Perfil ui-shadowBox' id='Perfil'>
+				<div class='Perfil-header'>
+
+					<div class='Perfil-headerTitle ui-shadowText'>Perfil</div>
+					<div class='Perfil-headerIcon icon-perfil ui-shadowText'></div>
+					
+					
+				</div>
+				<div class='Perfil-body'>
+					<figure class='Perfil-img'>
+						<img class='ui-shadowBox' src='static/img/avatar.jpg' alt='Julian M Parra'/>
+					</figure>
+					<article class='Perfil-article'>				
+						<h2 class='Perfil-articleTitle'>Julian M Parra</h2>
+						<div class='Perfil-articleText'>
+							<p>Profesional en ingeniería de sistemas con amplio conocimiento en diseño, arquitectura y desarrollo de software web a la medida.
+							</p>
+							<p>
+							Actualmente cuento con experiencia en la programación de sistemas para Backend tales como PHP en laravel, JAVA J2EE, ASP.NET C# y en motores de base de datos tales  como PostgreSQL, Mysql y Oracle. 
+							</p>
+							Por otro lado cuento con habilidades para la implementación de herramientas en Frontend como Android, HTML5, CSS3, Javascript, JQuery y Angular
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class='Trabajos ui-shadowBox' id='Trabajos' >
+				<div class='Trabajos-header'>
+
+					<div class='Trabajos-headerTitle ui-shadowText'>Participación en</div>
+					<div class='Trabajos-headerIcon icon-trabajo ui-shadowText'></div>
+					
+				</div>
+				<div class='Trabajos-body'>
+
+					<article class='Trabajos-article ui-shadowBox'>
+						<div class='Trabajos-articleTitle'>GEOCIM</div>
+						<figure class='Trabajos-articleImg'><img src='static/img/gyc.png'</figure>	
+						<div class='Trabajos-articleDescription'>Sistema de Gestión de Proyectos en GYC <a class='Trabajos-buttonPrimary'   target='_blank' href='http://181.48.245.194/geocim'>Geocim</a></div>				
+					</article>
+
+					<article class='Trabajos-article ui-shadowBox'>
+						<div class='Trabajos-articleTitle'>NICOMAR</div>
+						<figure class='Trabajos-articleImg'><img src='static/img/nicomar.png'</figure>	
+						<div class='Trabajos-articleDescription'>CMS para la página comercial de nicomar  <a class='Trabajos-buttonPrimary'   target='_blank' href='http://nicomar.com.co'>Nicomar</a></div>				
+					</article>
+
+					<article class='Trabajos-article ui-shadowBox'>
+						<div class='Trabajos-articleTitle'>COLCABLE</div>
+						<figure class='Trabajos-articleImg'><img src='static/img/colcable.png'</figure>	
+						<div class='Trabajos-articleDescription'>Sistema de administración facturable de Colcable</div>				
+					</article>
+
+					<article class='Trabajos-article ui-shadowBox'>
+						<div class='Trabajos-articleTitle'>MIASPROSA</div>
+						<figure class='Trabajos-articleImg'><img src='static/img/miasprosa.png'</figure>	
+						<div class='Trabajos-articleDescription'>Sistema movil de geolocalización para solicitud de transporte
+ <a class='Trabajos-buttonPrimary'  href='http://www.kdena.com/asprocliente/app.apk'>Cliente</a>
+  <a class='Trabajos-buttonSecundary' href='http://www.kdena.com/asprotrans/app.apk' >Transportador</a>
+  
+</div>				
+					</article>
+
+					<article class='Trabajos-article ui-shadowBox'>
+						<div class='Trabajos-articleTitle'>IDRD</div>
+						<figure class='Trabajos-articleImg'><img src='static/img/idrd.png'</figure>	
+						<div class='Trabajos-articleDescription'>Sistema de recoleccion y analisis de resultados deportivos del IDRD</div>				
+					</article>
+
+
+				</div>
+			</section>
+
+			<section class='Contacto ui-shadowBox' id='Contacto'>
+				<div class='Contacto-header'>
+
+					<div class='Contacto-headerTitle ui-shadowText'>Contacto</div>
+					<div class='Contacto-headerIcon icon-contacto ui-shadowText'></div>
+					
+				</div>
+				<div class='Contacto-body'>		
+							
+					<div class='Contacto-form'>					
+						<form id='formulario' method='post'>
+							<label class='Contacto-label'>Nombre</label>
+							<input type='text' id='nombre' required name='nombre' class='Contacto-input ui-shadowBox' placeHolder='Nombre' />
+							<label class='Contacto-label'>Correo</label>
+							<input type='email' id='correo' required name='correo' class='Contacto-input ui-shadowBox' placeHolder='Correo' />			
+							<label class='Contacto-label '>Asunto</label>
+							<textarea rows='3' id='asunto' name='asunto' type='text' class='Contacto-textarea ui-shadowBox' required placeHolder='Asunto'></textarea>
+							<button type='submit' class='Contacto-boton ui-shadowBox'>Enviar</button>
+						</form>			
+						
+					</div>				
+					<div class='Contacto-data'>
+						<div class='Contacto-personalData'>
+							<h3 class='Contacto-dataTitle'><span class='icon-inicio'></span> Datos Personales</h3>
+							<strong class='Contacto-dataSubTitle'>Correo:</strong>
+							<ul class='Contacto-dataList'>
+								<li class='Contacto-dataItem'>julian.m.parra@gmail.com</li>
+								<li class='Contacto-dataItem'>rank_1_house@hotmail.com</li>
+							</ul>
+							<strong class='Contacto-dataSubTitle'>Telefono:</strong>
+							<ul class='Contacto-dataList'>
+								<li class='Contacto-dataItem'>(+57) 320 425 74 03</li>							
+							</ul>													
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>	
+
+		<footer class='Footer'>
+			<a class='Footer-link ui-shadowText icon-twitter' href='https://twitter.com/maurorebound' target='_blank'></a>
+			<a class='Footer-link ui-shadowText icon-github' href='https://github.com/rebound56'  target='_blank'></a>
+			<a class='Footer-link ui-shadowText icon-linkedin' href='http://co.linkedin.com/pub/julian-parra/65/768/a84'  target='_blank'></a>
+			<a class='Footer-link ui-shadowText icon-facebook' href='https://facebook.com/rebound56'  target='_blank'></a>			
+			<div class='Footer-description' id='Footer-description'>				
+			</div>			
+		</footer>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src='static/js/utilidades.js'></script>
+		<script src='static/js/contacto.js'></script>
+		
+	</body>
+</html>

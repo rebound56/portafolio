@@ -4,18 +4,106 @@
 * 
 */
 
+
+.Alerta 
+{
+	position:fixed;
+	z-index:2;
+	right:0;
+	top:0;
+	left:0;
+	bottom:0;
+	background:rgba(255,255,255,0.8);
+
+}
+.Alerta .Alerta-mensaje 
+{
+	margin: 1em auto 0 auto;	
+	width: 70%;	
+	border-radius:.6em;
+	overflow: hidden;
+	box-shadow: 0 0 1em .5em rgba(0,0,0,0.5);
+
+}
+
+.Alerta .Alerta-mensaje .Alerta-mensajeHeader
+{
+
+	color:#fff;
+	background-color:#39825A;
+	padding:.5em;	
+	margin:0;
+	font-size:1.4em;
+	
+}
+
+.Alerta .Alerta-mensaje .Alerta-mensajeBody
+{
+	background-color:#eee;	
+	padding:2em;
+	
+
+}
+
+.Alerta .Alerta-mensaje .Alerta-mensajeFooter
+{
+	background-color:#ccc;
+	padding:.5em;	
+	text-align:right;
+
+}
+.Alerta .Alerta-mensaje .Alerta-mensajeFooter .Alerta-button
+{
+	margin: 0;
+	padding: .5em 1em;
+	background: #39825A;
+	border-color:#39825A;
+	border-radius: .5em;
+	color: #fff;
+
+}
+.Alerta .Alerta-mensaje .Alerta-mensajeFooter .Alerta-button:hover
+{
+	
+	background: #175031;
+	border-color:#175031;	
+
+}
+
+/* Cargando */
+
+.Cargando
+{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:white;
+}
+.Cargando .Cargando-content
+{
+	width:115px;
+	margin:30% auto 0;
+}
+.Cargando .Cargando-content img
+{
+	width:100%;	
+}
+
 /* contacto*/
+
 
 .Contacto
 {
 	margin:2em;
+	overflow:hidden;
+	border-radius:.6em;
 }
 
 .Contacto .Contacto-body
 {
 	background-color:#eeeeee;
-	border-radius:0 0 .6em .6em;
-	overflow:hidden;
 	padding:0 2em 2em;	
 	
 }
@@ -23,25 +111,35 @@
 .Contacto .Contacto-body .Contacto-form
 {
 	display:inline-block;
+	width:49%;
+	vertical-align:top;
+	overflow:hidden;
 	
 }
-
+.Contacto .Contacto-body .Contacto-form form
+{
+	padding:.5em;
+	
+}
 .Contacto .Contacto-body .Contacto-form .Contacto-label
 {
-	display:block;
+	display:inline-block;
+	width:90%;	
 	margin:1em 0 0 0;
 
 }
 .Contacto .Contacto-body .Contacto-form .Contacto-input
 {
-	display:block;	
+	display:inline-block;
+	width:90%;	
 	margin:1em 0 0 0;
 	padding:.5em;
 	border-radius:.5em;
 }
 .Contacto .Contacto-body .Contacto-form .Contacto-textarea
 {
-	display:block;	
+	display:inline-block;	
+	width:90%;	
 	resize:none;
 	margin:1em 0 0 0;
 	padding:.5em;
@@ -54,6 +152,7 @@
 	margin:1em 0 0 0;
 	padding:.5em 1em;
 	background:#923113;
+	border-color:#923113;
 	border-radius:.5em;
 	color:#fff;
 }
@@ -62,10 +161,53 @@
 {
 	margin:1em 0 0 0;
 	padding:.5em 1em;
-	background:#A33131;
+	background:#661F09;
+	border-color:#661F09;
 	border-radius:.5em;
 	color:#fff;
 } 
+
+.Contacto .Contacto-body .Contacto-data
+{
+	display:inline-block;
+	width:49%;
+	vertical-align:top;
+
+} 
+
+.Contacto .Contacto-body .Contacto-data .Contacto-personalData
+{
+	
+	padding:.5em;
+	margin:2em .5em;
+	text-align:center;
+}  
+
+
+.Contacto .Contacto-body .Contacto-data .Contacto-personalData .Contacto-dataList
+{
+	list-style-type:none;
+	padding-left:.5em;
+	
+}  
+
+.Contacto .Contacto-body .Contacto-data .Contacto-personalData .Contacto-dataList .Contacto-dataItem
+{
+word-wrap: break-word;
+
+
+}
+
+
+.Contacto .Contacto-body .Contacto-data .Contacto-personalData .Contacto-dataSubTitle
+{
+	
+}  
+
+.Contacto .Contacto-body .Contacto-data .Contacto-personalData .Contacto-dataTitle
+{
+	color:#923113;
+}
 
 .Contacto .Contacto-header 
 {
@@ -75,20 +217,56 @@
 	padding:.1em .5em;	
 	margin:0;
 	font-size:1.4em;
-	border-radius:.6em .6em 0 0;
+	
 }
 
 .Contacto .Contacto-header .Contacto-headerTitle
 {
 	float:left;
+	margin:0;
 }
 .Contacto .Contacto-header .Contacto-headerIcon
 {
 	float:right;
 }
 
+@media screen and (max-width:750px)
+	{
+		.Contacto .Contacto-body .Contacto-data{	
+			width:100%;			
+		}
+		.Contacto .Contacto-body .Contacto-form {		
+			width:100%;
+		}
+		.Contacto .Contacto-body{		
+			padding: 0 0.5em 1em;
+		}
+		
+	}
+@media screen and (max-width:520px)
+	{
+		.Contacto .Contacto-body .Contacto-data{	
+			font-size:.9em;
+		}		
+	}
 
+/* contenido */
 
+.Contenido
+{
+	margin:0 auto;
+	width:90%;
+}
+@media screen and (max-width:520px)
+	{
+		.Contenido{	
+			width:100%;
+		}
+		.Contenido section
+		{
+			margin:2em 0.5em;
+		}		
+	}
 
 /* footer */	
 
@@ -243,7 +421,7 @@
 		display: block;
 		text-decoration: none;
 		padding: .5em 1em;
-		margin: 0 .3em;
+		margin: 0 1.3em;
 		color: #fff;
 		background-color: #395A82;
 		border-radius:.4em;
@@ -280,7 +458,10 @@
 		{
 			display:block;
 			font-size:1.5em;
-		}	
+		}
+.Header .Header-menu .Header-menuList .Header-menuItem .Header-menuLink {
+margin: 0 .3em;
+}	
 		
 	}
 
@@ -289,14 +470,15 @@
 	
 	.Perfil
 	{
-		margin:2em;	
+		margin:2em;
+		border-radius:.6em;
+		overflow:hidden;	
 		
 	}
 
 	.Perfil .Perfil-body
 	{
-		background-color:#eeeeee;
-		border-radius:0 0 .6em .6em;
+		background-color:#eeeeee;		
 		padding-bottom:.5em;
 	}
 
@@ -330,7 +512,7 @@
 	}
 	.Perfil .Perfil-body .Perfil-img img {
 		max-width: 215px;
-		border-radius: 50%;
+		border-radius: 25% 10%;
 	}
 
 	.Perfil .Perfil-header
@@ -338,8 +520,7 @@
 		overflow:hidden;
 		color:#fff;
 		background-color:#395A82;
-		padding:.1em .5em;	
-		border-radius:.6em .6em 0 0;
+		padding:.1em .5em;			
 		margin:0;
 		font-size:1.4em;
 	}
@@ -353,11 +534,11 @@
 	.Perfil .Perfil-header .Perfil-headerTitle 
 	{
 		float:left;		
-			
+		margin:0;
 	}
 
 	
-	@media screen and (max-width:520px)
+	@media screen and (max-width:620px)
 	{
 		.Perfil .Perfil-body .Perfil-img {			
 			width:100%;
@@ -378,7 +559,7 @@
 	}
 	.ui-shadowBox
 	{
-		box-shadow:rgba(0,0,0,0.5) 5px 5px 5px;
+		box-shadow:rgba(0,0,0,0.5) 0 0 10px 3px;
 	}
 
 /* Trabajos */
@@ -386,12 +567,13 @@
 	.Trabajos 
 	{
 		margin:2em;	
+		overflow:hidden;
+		border-radius:.6em;
 	}
 
 	.Trabajos .Trabajos-body
 	{
-		background-color:#eeeeee;
-		border-radius:0 0 .6em .6em;
+		background-color:#eeeeee;		
 		padding-bottom: 2em;
 		text-align:center;
 	}
@@ -403,6 +585,7 @@
 		vertical-align:top;		
 		max-width:220px;
 		border-radius:.6em;
+		overflow:hidden;
 			
 	}
 
@@ -412,6 +595,7 @@
 		color:#fff;
 		padding:.2em .3em;
 		border-radius:.3em .3em 0 0;
+		margin:0;
 
 	}
 
@@ -433,6 +617,29 @@
 
 	}
 
+
+.Trabajos-buttonPrimary, .Trabajos-buttonSecundary 
+{
+display: block;
+padding: .3em;
+text-decoration: none;
+color: #fff;
+border-radius: .3em;
+margin:.3em;
+}
+
+
+.Trabajos-buttonPrimary
+{
+background: #395A82;
+}
+
+
+.Trabajos-buttonSecundary
+{
+background: #923113;
+}
+
 	.Trabajos .Trabajos-header 
 	{
 		overflow:hidden;
@@ -440,13 +647,13 @@
 		background-color:#395A82;
 		padding:.1em .5em;	
 		margin:0;
-		font-size:1.4em;
-		border-radius:.6em .6em 0 0;
+		font-size:1.4em;		
 	}
 
 	.Trabajos .Trabajos-header .Trabajos-headerTitle
 	{
 		float:left;
+		margin:0;
 	}
 	.Trabajos .Trabajos-header .Trabajos-headerIcon
 	{
